@@ -1,6 +1,7 @@
 const app = require('http').createServer(handler)
 const io = require('socket.io')(app);
 const fs = require('fs');
+var player = require('play-sound')()
 //var Gpio = require('onoff').Gpio;
 //var FLWheel = new Gpio(4,"out");
 //var FRWheel = new Gpio(5,"out");
@@ -25,7 +26,11 @@ io.on('connection', (socket) => {
   console.log("New controller connected!");
   socket.on("disconnect", (data) => {
     console.log("A controller disconnected!")
-  }
-  
+  },
+  socket.on("horn", (data) => {
+    player.play('./toot.mp3', (err) => {
+      if (err) console.log(`Could not play sound: ${err}`);
+  });
+  })
   )
 });
