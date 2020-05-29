@@ -5,4 +5,4 @@ The car will be controlled by a Raspberry pi running a node webserver, which you
 
 It's pretty simple.
 
-**CURRENTLY ONLY WORKS ON WINDOWS!!!
+**CURRENTLY ONLY WORKS ON WINDOWS!!!**
