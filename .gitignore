@@ -8,3 +8,4 @@ node_modules/.bin/electron-spawn
 node_modules/.bin/electron-spawn.ps1
 node_modules/.bin/electron.cmd
 node_modules/.bin/electron.ps1
+mplayer.exe
