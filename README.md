@@ -5,6 +5,6 @@ The car will be controlled by a Raspberry pi running a node webserver, which you
 
 It's pretty simple.
 
-The controller is suboptimal due to
-  a) websockets
+The controller is suboptimal due to <br/>
+  a) websockets <br/>
   b) buttons toggle, instead of holding
