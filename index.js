@@ -26,11 +26,21 @@ io.on('connection', (socket) => {
   console.log("New controller connected!");
   socket.on("disconnect", (data) => {
     console.log("A controller disconnected!")
-  },
+  }),
   socket.on("horn", (data) => {
     player.play('./toot.mp3', (err) => {
       if (err) console.log(`Could not play sound: ${err}`);
   });
-  })
-  )
+ }),
+  socket.on("left", (data) => {
+    console.log("left")
+  }),
+  socket.on("right", (data) => {
+    console.log("right")
+  }),
+  socket.on("forward", (data) => {
+    console.log("forward")
+  });
+  
+  
 });
